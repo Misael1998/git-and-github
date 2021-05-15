@@ -166,6 +166,8 @@ Una vez hayamos dado click en el botón SignUp entratemos a una página donde te
   \label{fig:github-signup-2}
 \end{figure}
 
+\subsection{Datos de perfil}
+
 Cuando ya tengamos la cuenta deberiamos modificar nuestros datos de perfil ya que GitHun no añade datos como nombre o foto de perfil, si no que hay que ponerlos manualmente. Para agregar estos debemos buscar en la esquina superior derecha un circulo donde debería estar la foto por defecto para nuestro perfil y le damos click.
 
 \begin{figure}[H]
@@ -180,8 +182,66 @@ Luego de dar click se desplegara un menú y buscamos la opción de configuració
 \begin{figure}[H]
   \centering
   \caption{Configuración de GitHub}
-  \includegraphics[width=0.50\textwidth]{./img/github-settings.png}
-  \label{fig:github-settings}
+  \includegraphics[width=0.50\textwidth]{./img/github-settings-1.png}
+  \label{fig:github-settings-1}
+\end{figure}
+
+Esto no llevara a la página de configuración de GitHub, en la barra lateral izquierda buscaremos la opción de perfil para poder empezar a agregar nuestros datos.
+
+\begin{figure}[H]
+  \centering
+  \caption{Configuración de perfil de GitHub}
+  \includegraphics[width=0.50\textwidth]{./img/github-settings-2.png}
+  \label{fig:github-settings-2}
+\end{figure}
+
+Aquí agregaremos información pública como el nombre, foto de perfil, cuenta de twitter, etc.
+
+Si tenemos un correo de una universidad/institucional lo podemos agregar como correo adicional y esto desbloqueará una plan que normalmente es pagado. Para agregar un correo alternativo buscamos en la barra lateral izquierda la opción de correo ó emails y le damos click. Allí podemos agregar correos adicionales y elegir la visibilidad de estos mismos en nuestro perfil.
+
+\begin{figure}[H]
+  \centering
+  \caption{Configuración de correo de GitHub}
+  \includegraphics[width=0.50\textwidth]{./img/github-settings-3.png}
+  \label{fig:github-settings-3}
+\end{figure}
+
+\subsection{Tokens de autenticación}
+
+La última configuración que hay que hacer en GitHub es la de el token de autenticación, esto nos permitira subir nuestros repositorios y cambios hechos en nuestras compuradoreas. Anteriormente GitHub usaba correo y contraseña para autenticación, pero lo están cambiando a tokens con el proposito de hacer más segura la comunicación. Existen otras técnicas como SSH pero los tokens son más faciles de usar. Para empezar a usar los tokens tenemos que entrar en las herramientas de desarrollador que están en la barra lateral izquierda.
+
+\begin{figure}[H]
+  \centering
+  \caption{Configuración de desarrollador}
+  \includegraphics[width=0.50\textwidth]{./img/github-tokens-1.png}
+  \label{fig:github-tokens-1}
+\end{figure}
+
+Luego buscamos la opción de tokens personales en la barra lateral izquierda y le damos click. Luego le damos click al botón de generar token para crear nuestro primer token.
+
+\begin{figure}[H]
+  \centering
+  \caption{Tokens}
+  \includegraphics[width=0.70\textwidth]{./img/github-tokens-2.png}
+  \label{fig:github-tokens-2}
+\end{figure}
+
+Luego hay que seleccionar lor permisos que tendrá el token, para efectos de simplicidad solo seleccionaremos repo. Junto con esto podemos escribir una breve descripción del proposito del token.
+
+\begin{figure}[H]
+  \centering
+  \caption{Permisos de token}
+  \includegraphics[width=0.50\textwidth]{./img/github-tokens-3.png}
+  \label{fig:github-tokens-3}
+\end{figure}
+
+Una vez creado el token tenemos que asegurarnos de copiarlo y guardarlo en un lugar seguro, ya que este token es el acceso a los repositorios en los que estamos trabajando. En caso de perder el token se puede simplemente borrar y crear uno nuevo, esta es la ventaja de usar tokens ya que no perdemos acceso a nuestra cuenta en GitHub y no configuramos llaves SSH desde cero.
+
+\begin{figure}[H]
+  \centering
+  \caption{Token generado}
+  \includegraphics[width=0.50\textwidth]{./img/github-tokens-4.png}
+  \label{fig:github-tokens-4}
 \end{figure}
 
 \section{Integración con VSCode}
