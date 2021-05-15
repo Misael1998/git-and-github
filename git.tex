@@ -12,6 +12,7 @@
 
 \lstset{basicstyle=\ttfamily,
   showstringspaces=false,
+  breaklines=true,
   commentstyle=\color{red},
   keywordstyle=\color{blue},
   aboveskip=3mm,
@@ -108,10 +109,38 @@ La última opción que tenemos que agregar es el de usar pseudo consolas, esto a
 Despues de seleccionar la opción anterior le damos click en el botón Instalar y con esto ya tendremos git instalado.
 
 \subsection{Mac}
+La instalación de git en mac es mucho mas sencilla, pero antes de poder instalarlo tendremos que instalar un manejador de paquetes. El manejador que paquetes que instalaremos se llama HomeBrew, esta dispobible en el siguiente enlace: \url{https://brew.sh/}.
 
+Para instalar HomeBrew tendremos que abrir el terminal de Mac y escribir el siguiente comando:
+
+\begin{lstlisting}[language=bash,caption={Comando para instalar HomeBrew}]
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+\end{lstlisting}
+
+Una vez instalado HomeBrew, instalar git es sencillo. Siempre en el terminal escribiremos el siguiente comando:
+
+\begin{lstlisting}[language=bash,caption={Comando para instalar git en Mac}]
+brew install git
+\end{lstlisting}
 
 \subsection{Linux}
+Por último, instalar git en Linux es mas facil que en los sistemas operativos anteriores. Primero abriremos el termial y luego dependiendo de la distribución de Linux que usemos escribiremos el siguiente comando:
 
+\subsubsection{Ubuntu/Debian}
+\begin{lstlisting}[language=bash,caption={Comando para instalar git en Ubuntu}]
+apt-get install git
+\end{lstlisting}
+
+\subsubsection{Fedora}
+\begin{lstlisting}[language=bash,caption={Comando para instalar git hasta Fedora21}]
+yum install git
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash,caption={Comando para instalar git en Fedora22 y superiores}]
+dnf install git
+\end{lstlisting}
+
+Para otras distribuciones de linux revisar el siguiente enlace: \url{https://git-scm.com/download/linux}
 
 \section{GitHub}
 
