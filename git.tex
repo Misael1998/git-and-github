@@ -1,5 +1,5 @@
 \documentclass[11pt, oneside]{article}
-\usepackage{geometry}                		
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
 \usepackage[utf8]{inputenc} 
 \usepackage[spanish]{babel}
 \geometry{letterpaper}                
@@ -9,6 +9,7 @@
 \usepackage{enumerate}
 \usepackage{xcolor}
 \usepackage{listings}
+\usepackage{float}
 
 \lstset{basicstyle=\ttfamily,
   showstringspaces=false,
@@ -21,6 +22,7 @@
 }
 
 \title{Git y Github}
+\date{}
 
 \begin{document}
 \maketitle
@@ -54,7 +56,7 @@ Unknown command: git
 \end{lstlisting}
 
 En caso que git no este instalado tendremos que ir al sito web \url{https://git-scm.com/downloads} y darle click al botón de descargar. En la figura \ref{fig:git-web} se muestra la pagina donde descargar git.
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \caption{Sitio web de git}
   \includegraphics[width=0.70\textwidth]{./img/ind-from-web.jpeg}
@@ -63,7 +65,7 @@ En caso que git no este instalado tendremos que ir al sito web \url{https://git-
 
 \subsection{Windows}
 Una vez descargado el git hay que ejecutar el programa. Aparecera la siguiente ventana y hay que darle click en el botón Ejecutar:
-\begin{figure}[!h]
+\begin{figure}[H]
   \centering
   \caption{ejecutar programa git}
   \includegraphics[width=0.50\textwidth]{./img/win/ins-win-1.jpeg}
@@ -72,7 +74,7 @@ Una vez descargado el git hay que ejecutar el programa. Aparecera la siguiente v
 
 Luego se arbrira la ventana de instalación, en la cual le daremos siguiente a la mayoría de las opciones.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \caption{ejecutar programa git}
   \includegraphics[width=0.50\textwidth]{./img/win/ins-win-2.jpeg}
@@ -81,7 +83,7 @@ Luego se arbrira la ventana de instalación, en la cual le daremos siguiente a l
 
 Luego de darle click a siguiente una cuantas veces llegaremos a una opción par definir el nombre por defecto de la rama principal, este lo cambiaremos a main en lugar de master ya que GitHub cambió su configuración para que la rama principal se llame main. De esta forma nos ahorraremos cambiarle el nombre a la rama maualmente.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \caption{ejecutar programa git}
   \includegraphics[width=0.50\textwidth]{./img/win/ins-win-3.jpeg}
@@ -90,7 +92,7 @@ Luego de darle click a siguiente una cuantas veces llegaremos a una opción par 
 
 La siguiente opción que tendremos que modificar es desde donde podemos ejecutar git, eligiremos la opción de ejecutarlo desde la linea de comando y desde software de terceros (esto nos facilitará usarlo).
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \caption{ejecutar programa git}
   \includegraphics[width=0.50\textwidth]{./img/win/ins-win-4.jpeg}
@@ -99,7 +101,7 @@ La siguiente opción que tendremos que modificar es desde donde podemos ejecutar
 
 La última opción que tenemos que agregar es el de usar pseudo consolas, esto ayuda a poder ejecutar comandos de python o node desde la consoloa de git.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \caption{ejecutar programa git}
   \includegraphics[width=0.50\textwidth]{./img/win/ins-win-5.jpeg}
@@ -143,7 +145,26 @@ dnf install git
 Para otras distribuciones de linux revisar el siguiente enlace: \url{https://git-scm.com/download/linux}
 
 \section{GitHub}
+Github es una plataforma que implemeta Git y hace mas facil poder colaborar con varias personas en proyectos de codigo a traves de la web. GitHub es relativamente sencillo de usar, pero tiene funcionalidades bien robustas para programadores experimentados. 
 
+\subsection{Registrarse en GitHub}
+Para empezar a usar GitHub primero hay que crear un perfil en, para esto hay que ir a la dirección web \url{https://github.com/} y hacer click en el botón de la esquina superios izquierda "Sign Up".
+
+\begin{figure}[H]
+  \centering
+  \caption{Página web de GitHub}
+  \includegraphics[width=0.90\textwidth]{./img/github-signup-1.png}
+  \label{fig:github-signup-1}
+\end{figure}
+
+Una vez hayamos dado click en el botón SignUp entratemos a una página donde tendremos que poner nuestros datos para crear la cuenta.
+
+\begin{figure}[H]
+  \centering
+  \caption{Registrarse en GitHub}
+  \includegraphics[width=0.50\textwidth]{./img/github-signup-2.png}
+  \label{fig:github-signup-2}
+\end{figure}
 
 \section{Integración con VSCode}
 
