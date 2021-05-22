@@ -240,12 +240,64 @@ Una vez creado el token tenemos que asegurarnos de copiarlo y guardarlo en un lu
 \begin{figure}[H]
   \centering
   \caption{Token generado}
-  \includegraphics[width=0.50\textwidth]{./img/github-tokens-4.png}
+  \includegraphics[width=0.70\textwidth]{./img/github-tokens-4.png}
   \label{fig:github-tokens-4}
 \end{figure}
 
-\section{Integración con VSCode}
+\section{Repositorios}
+Un repositorio es donde guardamos el proyecto, se podría decir que es una convención que se usa para indicar que una carpeta o directorio contiene cierto tipo de archivos o proyectos. Para que Git empiece a llevar un registro de los cambios en el proyecto lo primero que tenemos que hacer es inicializar un repositorio, hay muchas formas para inicializar un repositorio y cada una puede ser util en diferentes ocaciones pero al final todas hacen lo mismo. Una de las formas mas convenientes es crearlo en GitHub y despues descargarlo, de esta forma podemos definir varias configuraciones del repositorio sin tener que usar el terminal o crear ciertos archivos directamente. 
 
-\section{Integración con VSCode}
+\subsection{Crear repositorio en GitHub}
+
+Para crear el repositorio en GitHub tenemos que buscar el botón [ + ] en la esquina superior derecha, luego le damos click y seleccionamos nuevo repositorio.
+
+\begin{figure}[H]
+  \centering
+  \caption{Crear nuevo repositorio}
+  \includegraphics[width=0.70\textwidth]{./img/github-new-repo-1.png}
+  \label{fig:github-new-repo-1}
+\end{figure}
+
+Esto nos llevará a un menú de configuración para el repositorio, lo primero que haremos sera nombrarlo. Para nombrar un repositorio tenemos que seguir ciertas restricciones como, solo letras minusculas, no se aceptan espacios, el nombre tiene que ser único dentro de nuestros repositorios, etc.
+
+\begin{figure}[H]
+  \centering
+  \caption{Nombrar repositorio}
+  \includegraphics[width=0.70\textwidth]{./img/github-new-repo-2.png}
+  \label{fig:github-new-repo-2}
+\end{figure}
+
+Si tenemos multiples usuarios ó formamos parte de varias organizzaciones tendremos que especificar quien es el dueño del repositorio (las organizaciones las explicare mas adelante), esta opción la encontramos al lado izquierdo del nombre del repositorio.
+
+\begin{figure}[H]
+  \centering
+  \caption{Dueño del repositorio}
+  \includegraphics[width=0.70\textwidth]{./img/github-new-repo-3.png}
+  \label{fig:github-new-repo-3}
+\end{figure}
+
+Luego de esto tenemos la opción de agregar un gitignore, esto sirve para excluir archivos de git i.e. decirle a git cuales archivos no queremos que registre cambios. Para el .gitignore podemos elegir una plantilla para un tipo específico de proyecto, por ejemplo si estamos trabajando en un LaTex podemos buscar la plantilla tex y esto exluira los archivos .log, .dvi, etc. Así git solo se interesa en llevar cambios de los archivos que necesitamos.
+
+\begin{figure}[H]
+  \centering
+  \caption{.gitignore}
+  \includegraphics[width=0.70\textwidth]{./img/github-new-repo-4.png}
+  \label{fig:github-new-repo-4}
+\end{figure}
+
+La siguiente opción que podemos agregar es el uso de una lisencia de software, igual que con la plantilla de .gitignore podemos solo buscar el tipo de lisencia que queremos agregar y marcarla. Aquí podemos agregar de una vez si estamos usando GPL, APACHE, MIT u otras, claro que si cambiamos de lisencia se puede modificar mas adelante.
+
+\begin{figure}[H]
+  \centering
+  \caption{Lisencias de software}
+  \includegraphics[width=0.70\textwidth]{./img/github-new-repo-5.png}
+  \label{fig:github-new-repo-5}
+\end{figure}
+
+\section{Commits}
+
+\section{Branches}
+
+\section{GitHub y Organizaciones}
 
 \end{document}
